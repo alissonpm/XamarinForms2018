@@ -13,5 +13,30 @@ namespace App01_LayoutXF
         {
             InitializeComponent();
         }
+
+        private void Stack_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Layouts.Stack.StackPage());
+        }
+
+        private void Grid_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Layouts.Grid.GridPage());
+        }
+
+        private void Absolute_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Layouts.Absolute.AbsolutePage());
+        }
+
+        private void Relative_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Layouts.Relative.RelativePage());
+        }
+
+        private void Scroll_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Layouts.Scroll.ScrollPage());
+        }
     }
 }

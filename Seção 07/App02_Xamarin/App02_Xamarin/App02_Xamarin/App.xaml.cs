@@ -3,7 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-namespace App01_LayoutXF
+namespace App02_Xamarin
 {
     public partial class App : Application
     {
@@ -11,7 +11,7 @@ namespace App01_LayoutXF
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new App01_LayoutXF.MainPage());
+            MainPage = new App02_Xamarin.Master.Menu();
         }
 
         protected override void OnStart()
